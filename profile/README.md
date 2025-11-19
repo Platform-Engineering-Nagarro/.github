@@ -192,7 +192,7 @@ Our platform engineering initiatives focus on:
 
 ## License to 007 and Licence to Masala
 
-Individual repositories may have different licenses for James agent activities.
+Individual repositories may have different licenses for James Bond agent activities.
 Please ensure clearance from ma'm.
 
 Common licenses used:
