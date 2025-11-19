@@ -1,13 +1,15 @@
 # Platform Engineering Nagarro
 
-## Legend and Naming
+## Legend and Naming Convention
 
-- methops = Methodology Operations - All things methodology and process `methops-sprint-calculator`
-- scm = Source Code Management  - All things Git and Git configuration e.g `scm-git-config`
-- k8s = Kubernetes - All things Kubernetes and Helm charts e.g. `k8s-argo-helm` and `k8s-backstage-charts`
-- qa = Quality Assurance - All things quality assurance tooling e.g. `pre-commit`, `k6` and `locust`
-- cloudops = All things hyperscalers and hypervisors Azure, AWS and GCP and any other cloud platform e.g. `cloudops-azure-tf-modules`
-- tf = All things Terraform e.g. `tf-az-frontdoor`
+Our repository naming follows a structured prefix system for easy identification:
+
+- **methops** = Methodology Operations - All things methodology and process (e.g., `methops-sprint-calculator`)
+- **scm** = Source Code Management - All things Git and version control (e.g., `scm-git-mass-cloner`, `scm-git-config`)
+- **k8s** = Kubernetes - All things Kubernetes and Helm charts (e.g., `k8s-argo-helm`, `k8s-backstage-charts`)
+- **qa** = Quality Assurance - All things quality assurance and testing (e.g., `qa-locust-load-test`, `qa-k6`, `qa-pre-commit`)
+- **cloudops** = Cloud Operations - All things hyperscalers (Azure, AWS, GCP) and infrastructure (e.g., `cloudops-azure-tf-modules`)
+- **tf** = Terraform - Infrastructure as Code modules (e.g., `tf-az-frontdoor`, `tf-gcp-storage`)
 
 ## Our Focus
 
@@ -35,20 +37,15 @@ Platform Engineering at Nagarro specializes in:
   - Multiple load testing patterns (spike, gradual ramp, stress recovery)
   - Simple one-command setup: `python3 run.py`
 
-### CloudOps Azure Infrastructure
+### Source Code Management
 
-- **[cloudops-az-tf-frontdoor](../cloudops-az-tf-frontdoor)** - Azure Front Door Terraform modules
-  - Enterprise-grade Azure CDN and load balancing
-  - Infrastructure as Code for global traffic management
+- **[scm-git-mass-cloner](../scm-git-mass-cloner)** - Bulk repository cloning and management tool
+  - Clone multiple repositories efficiently
+  - Organization-wide repository management
+  - Automated synchronization
+  - Team onboarding acceleration
 
-### Developer Tooling
-
-- **[scm-git-config](../scm-git-config)** - Git configuration standards and best practices
-  - AI-powered commit message generation (Gemini)
-  - Conventional commit enforcement
-  - VS Code / Cursor integration
-  - Enhanced diff tools (Delta)
-  - Team-wide configuration scripts
+### Methodology Operations
 
 - **[methops-sprint-calculator](../methops-sprint-calculator)** - Sprint capacity planning automation
   - Google Calendar + Office 365 integration
@@ -66,13 +63,16 @@ cd qa-locust-load-test
 python3 run.py  # Auto-setup + interactive menu
 ```
 
-### Standardize Git Configuration
+### Clone Multiple Repositories
 
 ```bash
-# Download team Git setup script
-curl -o team-git-setup.sh <scm-git-config-repo>/team-git-setup.sh
-chmod +x team-git-setup.sh
-./team-git-setup.sh
+# Clone the mass cloner tool
+git clone <scm-git-mass-cloner-repo>
+cd scm-git-mass-cloner
+
+# Configure your organization/repositories
+# Run the mass clone operation
+./clone-repos.sh
 ```
 
 ### Calculate Sprint Capacity
@@ -101,9 +101,9 @@ Our platform engineering stack includes:
 ### Git Workflow
 
 - Use conventional commits: `feat:`, `fix:`, `docs:`, etc.
-- Leverage AI-powered commit messages (see [scm-git-config](../scm-git-config))
+- Utilize bulk repository operations with [scm-git-mass-cloner](../scm-git-mass-cloner)
 - Enforce code quality with pre-commit hooks
-- Generate comprehensive PR descriptions automatically
+- Maintain consistent repository structure across teams
 
 ### Infrastructure as Code
 
@@ -129,7 +129,7 @@ We welcome contributions from all Platform Engineering team members!
 4. **Push** to your branch: `git push origin feature/amazing-feature`
 5. **Open** a Pull Request
 
-For AI-powered commits, see our [Git configuration guide](../scm-git-config/README.md).
+For bulk repository management, see our [Git mass cloner guide](../scm-git-mass-cloner/README.md).
 
 ## Repository Standards
 
@@ -169,10 +169,11 @@ All repositories in this organization follow these standards:
 
 ### For New Team Members
 
-1. Review our [Git configuration standards](../scm-git-config/README.md)
-2. Set up your development environment with team configs
+1. Use [scm-git-mass-cloner](../scm-git-mass-cloner/README.md) to clone all team repositories
+2. Set up your development environment with team standards
 3. Explore the [load testing framework](../qa-locust-load-test/README.md)
 4. Familiarize yourself with our Helm chart repositories
+5. Review the [sprint calculator](../methops-sprint-calculator/README.md) for capacity planning
 
 ### Skill Development
 
