@@ -9,10 +9,6 @@
 - cloudops = All things hyperscalers and hypervisors Azure, AWS and GCP and any other cloud platform e.g. `cloudops-azure-tf-modules`
 - tf = All things Terraform e.g. `tf-az-frontdoor`
 
-> The home of Platform Engineering
-
-Welcome to the Platform Engineering Nagarro GitHub organization - your central hub for infrastructure tooling, automation frameworks, and development best practices.
-
 ## Our Focus
 
 Platform Engineering at Nagarro specializes in:
@@ -39,9 +35,9 @@ Platform Engineering at Nagarro specializes in:
   - Multiple load testing patterns (spike, gradual ramp, stress recovery)
   - Simple one-command setup: `python3 run.py`
 
-### Azure Infrastructure
+### CloudOps Azure Infrastructure
 
-- **[az-tf-frontdoor](../az-tf-frontdoor)** - Azure Front Door Terraform modules
+- **[cloudops-az-tf-frontdoor](../cloudops-az-tf-frontdoor)** - Azure Front Door Terraform modules
   - Enterprise-grade Azure CDN and load balancing
   - Infrastructure as Code for global traffic management
 
@@ -158,7 +154,7 @@ All repositories in this organization follow these standards:
 ### Internal Resources
 
 - **Platform Engineering Wiki**: [Coming Soon]
-- **Slack Channel**: #platform-engineering
+- **Teams Channel**: #platform-engineering
 - **Team Meetings**: Weekly sprint planning
 
 ### External Resources
