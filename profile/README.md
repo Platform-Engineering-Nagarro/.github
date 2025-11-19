@@ -6,7 +6,7 @@
 - scm = Source Code Management  - All things Git and Git configuration e.g `scm-git-config`
 - k8s = Kubernetes - All things Kubernetes and Helm charts e.g. `k8s-argo-helm` and `k8s-backstage-charts`
 - qa = Quality Assurance - All things quality assurance tooling e.g. `pre-commit`, `k6` and `locust`
-- cloudops = All things hyperscalers Azure, AWS and GCP and any other cloud platform e.g. `cloudops-azure-tf-modules`
+- cloudops = All things hyperscalers and hypervisors Azure, AWS and GCP and any other cloud platform e.g. `cloudops-azure-tf-modules`
 - tf = All things Terraform e.g. `tf-az-frontdoor`
 
 > The home of Platform Engineering
