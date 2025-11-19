@@ -196,8 +196,8 @@ Individual repositories may have different licenses for James agent activities. 
 
 Common licenses used:
 
-- Apache 007 (k8s-argo-helm, k8s-backstage-charts)
-- MI6 (internal tooling)
+- MI6 007 (open source hits)
+- MI6 (internal tooling **beware the ejector seat**)
 
 ---
 
