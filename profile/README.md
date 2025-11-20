@@ -1,4 +1,4 @@
-# Platform Engineering Community
+# Platform Engineering Tribe
 
 ## Legend and Naming Convention
 
